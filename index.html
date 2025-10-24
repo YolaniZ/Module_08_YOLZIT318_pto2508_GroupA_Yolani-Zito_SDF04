@@ -1,25 +1,76 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link
+      rel="shortcut icon"
+      href="https://codespace-assets.global.ssl.fastly.net/wp/assets/website/codespace-primary-logo-light.svg"
+      type="image/svg+xml"
+    />
     <title>Footer</title>
-<link rel="stylesheet" href="style.css">
-  </head>
-  <body>
-    <!-- Main content -->
-    <footer class="bg-[#659f8f] dark:bg-[#313131]">
-      <div class="container px-6 py-12 mx-auto">
-        <div class="flex">
-          <a href="#">
-            <img
-              class="w-auto h-7"
-              src="https://codespace-assets.global.ssl.fastly.net/wp/assets/website/codespace-primary-logo-light.svg"
-              alt="CodeSpace Logo"
-            />
-          </a>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <footer aria-label="Site Footer" class="footer">
+        <!-- This container contains my form and ul links separately allowing me to flex-wrap when styling -->
+        <div class="container">
+
+            <section class="form-container">
+                <h1 class="title">Subscribe to our newsletter for updates</h1>
+                <!-- form containing input and button -->
+                <form aria-label="Newsletter Subscription">
+                    <label for="email" class="visually-hidden">Email Address</label>
+                 <input 
+                        id="email"
+                        type="email" 
+                        name="email" 
+                        placeholder="Email Address" 
+                        required 
+                        aria-required="true"
+                    >
+                    <button class="subscribe-btn" type="submit">Subscribe</button>
+                </form>  
+            </section>
+            <!-- Links container containing my h2 and ul -->
+            <div class="links-container">
+                <h2 class="sub-title">Quick Links</h2>
+                <ul class="footer-list">
+                    <li class="link">
+                        <a href="#" target="_blank">Home</a>
+                    </li>
+                    <li class="link">
+                        <a href="#" target="_blank">Who Are We</a>
+                    </li>
+                    <li class="link">
+                        <a href="#" target="_blank">Our Philosophy</a>
+                    </li>
+                </ul>
+            </div>
+            <div class="links-container">
+                <h2 class="sub-title">Technologies</h2>
+                <ul class="footer-list">
+                    <li class="link">
+                        <a href="#" target="_blank">HTML</a>
+                    </li>
+                    <li class="link">
+                        <a href="#" target="_blank">CSS</a>
+                    </li>
+                    <li class="link">
+                        <a href="#" target="_blank">JavaScript</a>
+                    </li>
+                </ul>
+            </div>
         </div>
-      </div>
-    </footer>
-  </body>
+        <!-- border line in design but is ignored by screen readers -->
+        <hr aria-hidden="true" />
+
+        <!-- div holds my image of codespace logo -->
+        <div class="footer-logo">
+            <img class="w-auto h-7"
+            src="https://codespace-assets.global.ssl.fastly.net/wp/assets/website/codespace-primary-logo-light.svg"
+            alt="CodeSpace Logo">
+        </div>
+    </footer>  
+</body>
 </html>
