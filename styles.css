@@ -1,12 +1,34 @@
   .root {
     margin: 0;
     font-family: Arial, sans-serif;
-    background-color: #5f8f84;
+
+}
+html {
+  font-family: poppins, sans-serif;
+  font-size: clamp (1rem, 0.5rem + 1.5vw, 2rem);
+  
+}
+body {
+  height: 50vh;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+h1 { font-size: 0.9 em;}
+
+h4 { font-size: 0.8 em;}
+
+li { list-style: none;}
+
+a {
+    text-decoration: none;
+    color: inherit;
 }
 
 /* Footer Styling */
 .footer {
-    background-color: #5f8f84; 
+    background-color: rgb(101, 161, 144);
     color: black;
     padding: 30px 50px;
 }
@@ -91,18 +113,29 @@ hr {
 
 .footer-logo img {
     width: 150px;
-    margin-right: 400x;
+    margin-right: 25%;
+    block-size: auto;
+
 }
 
 /* Responsive Design */
-@media (max-width: 768px) {
-    .container {
-        flex-direction: column;
-        align-items: flex-start;
-    }
 
-    form input[type="email"], .subscribe-btn {
-        width: 100%;
+
+@media screen and (max-width: 870px) {
+    .links-container { width: 40%;}
+
+/* Tablet */
+@media screen and (max-width: 800px) {
+    body { margin: 30vh auto; }
+    img { width: 50%; }
+}
+
+/* Mobile */
+@media screen and (max-width: 400px) {
+    body { margin: 10vh auto; }
+    .container, form { flex-direction: column; }
+    input[type="email"], .subscribe-btn { width: 100%; }
+    img { width: 60%; }
     }
 }
 
