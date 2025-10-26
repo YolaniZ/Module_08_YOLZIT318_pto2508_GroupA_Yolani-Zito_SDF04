@@ -20,12 +20,21 @@
                 <h1 class="title">Subscribe to our newsletter for updates</h1>
                 <!-- form containing input and button -->
                 <form aria-label="Newsletter Subscription">
-                   <input type="email" placeholder="Email Address" required>
+        
+                    <input 
+                        id="email"
+                        type="email" 
+                        name="email" 
+                        placeholder="Email Address" 
+                        required 
+                        aria-required="true"
+                    >
                     <button class="subscribe-btn" type="submit">Subscribe</button>
                 </form>  
             </section>
             <!-- Links container containing my h2 and ul -->
-       <h2 class="sub-title">Quick Links</h2>
+            <div class="links-container">
+                <h4 class="sub-title">Quick Links</h4>
                 <ul class="footer-list">
                     <li class="link">
                         <a href="#" target="_blank">Home</a>
@@ -40,7 +49,7 @@
             </div>
 
             <div class="links-container">
-                <h2 class="sub-title">Technologies</h2>
+                <h4 class="sub-title">Technologies</h4>
                 <ul class="footer-list">
                     <li class="link">
                         <a href="#" target="_blank">HTML</a>
@@ -59,7 +68,7 @@
 
         <!-- div holds my image of codespace logo -->
         <div class="footer-logo">
-            <img class="w-auto h-7"
+            <img
             src="https://codespace-assets.global.ssl.fastly.net/wp/assets/website/codespace-primary-logo-light.svg"
             alt="CodeSpace Logo">
         </div>

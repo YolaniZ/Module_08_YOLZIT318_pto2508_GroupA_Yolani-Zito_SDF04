@@ -1,39 +1,89 @@
-html {
-  font-family: popins, sans-serif;/* included font */
-  font-size: clamp (1rem, 2vw, 1.25rem); /* responsive font size */
-}
+
 body {
-  margin: 0;
-  font-family: Arial, sans-serif;
-  background-color: #5f8f8f;  
-  /* height: 50vh; */
-  height:0;}
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background-color: #5f8f84;
+}
 
-h1 {font-size: 0.9em;}
-h2 {font-size: 0.7em;}
-list {list-style: none; padding: 0; }
+.footer {
+    background-color: #5f8f84; 
+    color: #fff;
+    padding: 30px 50px;
+}
 
-
-  
 .footer-container {
-  display: flex;
-  justify-content: space-between;
-  flex-wrap: wrap;
-  gap: 20px;
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+    flex-wrap: wrap;
+    gap: 1.3em;
+    align-items: baseline;
 }
-.footer-section {
-  flex: 1 1 200px;
-  margin: 20px;
+
+.newsletter p {
+    margin-bottom: 10px;
+    font-size: 16px;
 }
-.footer hr {
-  width: 100%;
-  border: 0.5px solid #a67c52;
-  margin: 2 em 0;
+
+.subscribe-form {
+    display: flex;
+    gap: 10px;
 }
-.subscribe-btn {
-  background-color: #8c5e3c;
-  color: white;
-  border: none;
-  padding: 10px 20px;
-  cursor: pointer;
+
+.subscribe-form input {
+    padding: 10px;
+    border: none;
+    border-radius: 4px;
+    width: 200px;
+}
+
+.subscribe-form button {
+    background-color: #d 10px 20px;
+    border-radius: 4px;
+    cursor: pointer;
+    font-weight: bold;
+}
+
+.subscribe-form button:hover {
+    background-color: #e67e22;
+}
+
+.footer-links h4 {
+    margin-bottom: 10px;
+    font-size: 16px;
+}
+
+.footer-links ul {
+    list-style: none;
+    padding: 0;
+}
+
+.footer-links ul li {
+    margin-bottom: 8px;
+}
+
+.footer-links ul li a {
+    color: #fff;
+    text-decoration: none;
+}
+
+.footer-links ul li a:hover {
+    text-decoration: underline;
+}
+
+hr {
+    border: none;
+    border-top: 1px solid #a0522d; /* Brown line */
+    margin: 20px 0;
+}
+
+.footer-bottom h2 {
+    font-size: 24px;
+    font-weight: bold;
+    color: #fff;
+}
+
+.footer-bottom h2 span {
+    color: #ccc;
+    font-weight: normal;
 }
