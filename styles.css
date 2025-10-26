@@ -1,19 +1,39 @@
+html {
+  font-family: popins, sans-serif;/* included font */
+  font-size: clamp (1rem, 2vw, 1.25rem); /* responsive font size */
+}
 body {
   margin: 0;
   font-family: Arial, sans-serif;
-  background-color: #5f8f8f; 
+  background-color: #5f8f8f;  
+  /* height: 50vh; */
+  height:0;}
+
+h1 {font-size: 0.9em;}
+h2 {font-size: 0.7em;}
+list {list-style: none; padding: 0; }
+
+
   
+.footer-container {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  gap: 20px;
 }
-.footer-logo img {
-  padding: 30px 20px;
+.footer-section {
+  flex: 1 1 200px;
+  margin: 20px;
 }
 .footer hr {
   width: 100%;
   border: 0.5px solid #a67c52;
-  margin: 20px 0;
-
-
+  margin: 2 em 0;
 }
-
-
-
+.subscribe-btn {
+  background-color: #8c5e3c;
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  cursor: pointer;
+}
